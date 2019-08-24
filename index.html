@@ -1,164 +1,1116 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Parallax Template - Materialize</title>
 
-  <!-- CSS  -->
+<head>
+  <meta charset="utf-8">
+  <!-- IE compatiblity meta -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- mobile first meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="describtion" content=""/>
+  <meta name="author"  content="" />
+  <title>Foxira - One Page Portfolio</title>
+  <link rel="shortcut icon" href="http://via.placeholder.com/30x30/222">
+  <link rel="stylesheet" href="css/materialize.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/font-icon.css">
+  <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" type="text/css" href="css/owl.theme.default.css">
+  <link rel="stylesheet" href="css/progress-circle.css">
+  <link rel="stylesheet" type="text/css" href="css/lightbox.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="stylesheet" type="text/css" href="css/style.css"> <!--==*main style*==-->
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
+   <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+
 </head>
 <body>
-  <nav class="white" role="navigation">
-    <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo">Logo</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#">Navbar Link</a></li>
-      </ul>
 
-      <ul id="nav-mobile" class="sidenav">
-        <li><a href="#">Navbar Link</a></li>
-      </ul>
-      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-    </div>
-  </nav>
 
-  <div id="index-banner" class="parallax-container">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <br><br>
-        <h1 class="header center teal-text text-lighten-2">Parallax Template</h1>
-        <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
-        </div>
-        <div class="row center">
-          <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
-        </div>
-        <br><br>
-
-      </div>
-    </div>
-    <div class="parallax"><img src="background1.jpg" alt="Unsplashed background img 1"></div>
+<!-- ========== *// Preloader [loading] //* ========== -->
+  <div class="preloader">
+    <div class="sk-spinner sk-spinner-pulse"></div>
   </div>
 
 
-  <div class="container">
-    <div class="section">
 
-      <!--   Icon Section   -->
-      <div class="row">
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
-            <h5 class="center">Speeds up development</h5>
 
-            <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
-          </div>
-        </div>
 
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">group</i></h2>
-            <h5 class="center">User Experience Focused</h5>
 
-            <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
-          </div>
-        </div>
 
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
-            <h5 class="center">Easy to work with</h5>
 
-            <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
-          </div>
-        </div>
-      </div>
 
-    </div>
+
+<!-- ========== *// up [up to page] //* ========== -->
+<div class="up">
+  <i class="fa fa-long-arrow-up"></i>
+</div>
+
+
+
+
+
+
+
+
+
+
+<!-- ========== *// [Right nav] //* ========== -->
+<div class="right-nav hide-on-med-and-down">
+  <ul>
+                <!-- ====* Home *=== -->
+    <li><a href="#home" class="tooltipped" data-position="left" data-delay="20" data-tooltip="Home"><i class="material-icons">bookmark_border</i></a></li>
+                <!-- ====* About *=== -->
+    <li><a href="#about" class="tooltipped" data-position="left" data-delay="20" data-tooltip="About"><i class="material-icons">person_outline</i></a></li>
+                <!-- ====* Skills *=== -->
+    <li><a href="#skills" class="tooltipped" data-position="left" data-delay="20" data-tooltip="Skills"><i class="material-icons">settings_input_component</i></a></li>
+                <!-- ====* Services *=== -->
+    <li><a href="#services" class="tooltipped" data-position="left" data-delay="20" data-tooltip="Services"><i class="material-icons">build</i></a></li>
+                <!-- ====* portfolio *=== -->
+    <li><a href="#portfolio" class="tooltipped" data-position="left" data-delay="20" data-tooltip="Portfolio"><i class="material-icons">collections</i></a></li>
+                <!-- ====* testimonials *=== -->
+    <li><a href="#testimonials" class="tooltipped" data-position="left" data-delay="20" data-tooltip="Testimonials"><i class="material-icons">settings</i></a></li>
+                 <!-- ====* blog *=== -->
+    <li><a href="#blog" class="tooltipped" data-position="left" data-delay="20" data-tooltip="Blog"><i class="material-icons">comment</i></a></li>
+                <!-- ====* contact *=== -->
+    <li><a href="#contact" class="tooltipped" data-position="left" data-delay="20" data-tooltip="Contact"><i class="material-icons">send</i></a></li>
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<!-- ========== *// [Slide nav btn] //* ========== -->
+ <div class="slide-nav-btn">
+    <span></span>
   </div>
 
 
-  <div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
-        </div>
-      </div>
-    </div>
-    <div class="parallax"><img src="background2.jpg" alt="Unsplashed background img 2"></div>
-  </div>
-
-  <div class="container">
-    <div class="section">
-
-      <div class="row">
-        <div class="col s12 center">
-          <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h4>Contact Us</h4>
-          <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-
-  <div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
-        </div>
-      </div>
-    </div>
-    <div class="parallax"><img src="background3.jpg" alt="Unsplashed background img 3"></div>
-  </div>
-
-  <footer class="page-footer teal">
+<!-- ========== *// [Section (1)] slide nav //* ========== -->
+<section class="slide-nav">
+ <!-- ===== slide-nav-header ======-->
+  <div class="slide-nav-header">
     <div class="container">
+      <div class="profile-img hide-on-med-and-down">
+        <img src="http://via.placeholder.com/100x100/222" title="" alt="">
+        <div class="profile-caption center-align">
+        <a href="http://via.placeholder.com/300x300/222" data-lightbox="profile" data-title="JONE DOE">
+          <span class="icon icon-focus"></span>
+        </a>
+        </div>
+      </div>
+      <h5 class="h-style"><span class="icon icon-profile-male"></span> JAMES LAMB</h5>
+      <p>jimlamb42@gmail.com</p>
+    </div>
+  </div>
+  <!-- ==== end slide-nav-header ====-->
+  <ul>
+    <li><a href="#home" ><span class="icon icon-ribbon"></span> Home</a></li>
+    <li><a href="#about" ><span class="icon icon-profile-male"></span> About</a></li>
+    <li><a href="#skills" ><span class="icon icon-adjustments"></span> Skills</a></li>
+    <li><a href="#services" ><span class="icon icon-tools-2"></span> Services</a></li>
+    <li><a href="#portfolio" ><span class="icon icon-linegraph"></span> Portfolio</a></li>
+    <li><a href="#testimonials" ><span class="icon icon-gears"></span> Testimonials</a></li>
+    <li><a href="#blog" ><span class="icon icon-documents"></span> Blog</a></li>
+    <li><a href="#contact" ><span class="icon icon-envelope"></span> Contact</a></li>
+  </ul>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ========== * [Section (2)] Home * ========== -->
+<section class="home center-align" id="home">
+  <div class="content">
+    <div id="particles-js"></div>
+     <div class="container">
+    <!-- ======== start info ======= -->
       <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
-
-
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Connect</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
+        <div class="col s12 m6 push-m3">
+          <div class="info">
+            <p> HELLO, I AM JONE DOE</p>
+            <h4 class="h-style write"></h4>
+            <a href="#contact" class="btn h-style btn-1">Contact me</a>
+            <a href="#portfolio" class="btn h-style">My Works</a>
+          </div>
         </div>
       </div>
+    <!-- ========== end info ======= -->
+
+     <!-- ===== start down icon ======-->
+          <a href="#about" class="down">
+            <i class="fa fa-angle-double-down"></i>
+          </a>
+     <!--====== end down icon =========-->
+     </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- ========== * [Section (3)] About * ========== -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="row">
+      <!-- start slider -->
+      <div class="col s12 m12 l6 center-align about-info">
+        <div class="carousel">
+          <!-- start item #1 -->
+          <a class="carousel-item" href="#one!">
+           <div class="hobby z-depth-2">
+             <span class="icon icon-camera"></span>
+             <h5 class="h-style">photography</h5>
+             <p class="p-style">
+             Quickly syndicate focused leadership and cutting-edge platforms</p>
+           </div>
+          </a>
+
+          <!-- start item #2 -->
+          <a class="carousel-item" href="#two!">
+           <div class="hobby z-depth-2">
+             <span class="icon icon-laptop"></span>
+             <h5 class="h-style">Design</h5>
+             <p class="p-style">
+             Quickly syndicate focused leadership and cutting-edge platforms</p>
+           </div>
+          </a>
+
+          <!-- start item #1 -->
+          <a class="carousel-item" href="#three!">
+           <div class="hobby z-depth-2">
+             <span class="icon icon-book-open"></span>
+             <h5 class="h-style">Reading</h5>
+             <p class="p-style">
+             Quickly syndicate focused leadership and cutting-edge platforms</p>
+           </div>
+          </a>
+
+          <!-- start item #1 -->
+          <a class="carousel-item" href="#four!">
+           <div class="hobby z-depth-2">
+             <span class="icon icon-video"></span>
+             <h5 class="h-style">Movies</h5>
+             <p class="p-style">
+             Quickly syndicate focused leadership and cutting-edge platforms</p>
+           </div>
+          </a>
+
+          <!-- start item #1 -->
+          <a class="carousel-item" href="#five!">
+           <div class="hobby z-depth-2">
+             <span class="icon icon-bike"></span>
+             <h5 class="h-style">Riding a bike</h5>
+             <p class="p-style">
+             Quickly syndicate focused leadership and cutting-edge platforms</p>
+           </div>
+          </a>
+
+       </div>
+      </div>
+      <!-- end slider -->
+
+
+      <!-- start information about me -->
+      <div class="col s12 m12 l6 about-info">
+        <div class="about-me">
+            <h5 class="h-style">About Me</h5>
+            <p class="p-style">Quickly syndicate focused leadership and cutting-edge platforms. Intrins drive bricks and clicks applications after 24/7 core competencies. Interactive seize corporate manufactured products vis-a-vis customer directed partnerships.</p>
+            <p class="p-style">Holisticly conceptualize premier innovation and optimal outsourcing. Intrinsicly promote professional outsourcing before standards compliant human capital. Progressive based resources with extensive. You can hire me anytime you want.</p>
+        </div>  
+      </div>
+
     </div>
-    <div class="footer-copyright">
-      <div class="container">
-      Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- ========== * [Section (4)] Skills * ========== -->
+  <section class="skills center-align" id="skills">
+  
+    <div class="container">
+    <h5 class="h-style">SKILLS & EXPERIENCE</h5>
+    <p class="p-style">Interactive seize corporate manufactured products vis-a-vis customer directed</p>
+    <p class="p-style">Quickly syndicate focused leadership and cutting-edge</p>
+      <div class="row">
+        <!-- start skill [1] -->
+        <div class="col s6 m6 l3">
+          <div class="info">
+            <div class="progress-circle progress-90 one">
+            <span class="h-style">90</span>
+            </div>
+            <h5 class="h-style">WEB DESIGN</h5>
+          </div> 
+        </div>
+
+        <!-- start skill [2] -->
+        <div class="col s6 m6 l3">
+          <div class="info">
+            <div class="progress-circle progress-75 two">
+            <span class="h-style">75</span>
+            </div>
+            <h5 class="h-style">HTML / CSS</h5>
+          </div> 
+        </div>
+
+        <!-- start skill [3] -->
+        <div class="col s6 m6 l3">
+          <div class="info">
+            <div class="progress-circle progress-70 three">
+            <span class="h-style">70</span>
+            </div>
+            <h5 class="h-style">GRAPHIC DESIGN</h5>
+          </div> 
+        </div>
+
+        <!-- start skill [4] -->
+        <div class="col s6 m6 l3">
+          <div class="info">
+            <div class="progress-circle progress-85 four">
+            <span class="h-style">85</span>
+            </div>
+            <h5 class="h-style">UI / UX</h5>
+          </div> 
+        </div>
+
       </div>
     </div>
-  </footer>
+  </section>
 
 
-  <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
 
-  </body>
+
+
+
+
+
+
+
+
+
+<!-- ========== * [Section (5)] Services * ========== -->
+<section class="services center-align" id="services">
+           
+  <div class="container">
+  <h5 class="h-style">MY DAILY SERVICES</h5>
+  <p class="p-style">Interactive seize corporate manufactured products vis-a-vis customer directed</p>
+    <p class="p-style">Quickly syndicate focused leadership and cutting-edge</p>
+    <div class="row">
+
+
+       <!-- start services [1] -->
+       <div class="col s12 m6 l4">
+         <div class="info">
+           <span class="icon icon-strategy"></span>
+           <h5 class="h-style">STRATEGY & CONSULTING</h5>
+           <p class="p-style">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</p>
+            <!-- ==== * modal btn * =====-->
+           <a class="waves-effect waves-light modal-trigger" href="#modal1">
+             <span class="icon icon-caution"></span>
+           </a>
+           <!--===== * start modal content * ====== -->
+           <div id="modal1" class="modal">
+                <div class="modal-content">
+                  <span class="icon icon-strategy"></span>
+                   <h5 class="h-style">STRATEGY & CONSULTING</h5>
+                   <p class="p-style">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                </div>
+                
+           </div>
+           <!--===== *   end modal content *   ====== -->
+         </div>
+       </div>
+
+       <!-- start services [2] -->
+       <div class="col s12 m6 l4">
+         <div class="info">
+           <span class="icon icon-briefcase"></span>
+           <h5 class="h-style">CORPORATE IDENTITY</h5>
+           <p class="p-style">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</p>
+            <!-- ==== * modal btn * =====-->
+           <a class="waves-effect waves-light modal-trigger" href="#modal2">
+             <span class="icon icon-caution"></span>
+           </a>
+           <!--===== * start modal content * ====== -->
+           <div id="modal2" class="modal">
+                <div class="modal-content">
+                  <span class="icon icon-briefcase"></span>
+                  <h5 class="h-style">CORPORATE IDENTITY</h5>
+                   <p class="p-style">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                </div>
+                
+           </div>
+           <!--===== *   end modal content *   ====== -->
+         </div>
+       </div>
+
+       <!-- start services [3] -->
+       <div class="col s12 m6 l4">
+         <div class="info">
+           <span class="icon icon-tools"></span>
+           <h5 class="h-style">WEB DESIGN AND DEVELOPMENT</h5>
+           <p class="p-style">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</p>
+            <!-- ==== * modal btn * =====-->
+           <a class="waves-effect waves-light modal-trigger" href="#modal3">
+             <span class="icon icon-caution"></span>
+           </a>
+           <!--===== * start modal content * ====== -->
+           <div id="modal3" class="modal">
+                <div class="modal-content">
+                  <span class="icon icon-tools"></span>
+                  <h5 class="h-style">WEB DESIGN AND DEVELOPMENT</h5>
+                   <p class="p-style">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                </div>
+                
+           </div>
+           <!--===== *   end modal content *   ====== -->
+         </div>
+       </div>
+
+       <!-- start services [4] -->
+       <div class="col s12 m6 l4">
+         <div class="info">
+           <span class="icon icon-genius"></span>
+           <h5 class="h-style">BRANDING</h5>
+           <p class="p-style">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</p>
+            <!-- ==== * modal btn * =====-->
+           <a class="waves-effect waves-light modal-trigger" href="#modal4">
+             <span class="icon icon-caution"></span>
+           </a>
+           <!--===== * start modal content * ====== -->
+           <div id="modal4" class="modal">
+                <div class="modal-content">
+                  <span class="icon icon-genius"></span>
+                  <h5 class="h-style">BRANDING</h5>
+                   <p class="p-style">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                </div>
+                
+           </div>
+           <!--===== *   end modal content *   ====== -->
+         </div>
+       </div>
+
+       <!-- start services [5] -->
+       <div class="col s12 m6 l4">
+         <div class="info">
+           <span class="icon icon-megaphone"></span>
+           <h5 class="h-style">DIGITAL MARKETING</h5>
+           <p class="p-style">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</p>
+            <!-- ==== * modal btn * =====-->
+           <a class="waves-effect waves-light modal-trigger" href="#modal5">
+             <span class="icon icon-caution"></span>
+           </a>
+           <!--===== * start modal content * ====== -->
+           <div id="modal5" class="modal">
+                <div class="modal-content">
+                  <span class="icon icon-megaphone"></span>
+                 <h5 class="h-style">DIGITAL MARKETING</h5>
+                   <p class="p-style">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                </div>
+                
+           </div>
+           <!--===== *   end modal content *   ====== -->
+         </div>
+       </div>
+
+       <!-- start services [6] -->
+       <div class="col s12 m6 l4">
+         <div class="info">
+           <span class="icon icon-trophy"></span>
+           <h5 class="h-style">PROMOTION MATERIAL</h5>
+           <p class="p-style">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</p>
+            <!-- ==== * modal btn * =====-->
+           <a class="waves-effect waves-light modal-trigger" href="#modal6">
+             <span class="icon icon-caution"></span>
+           </a>
+           <!--===== * start modal content * ====== -->
+           <div id="modal6" class="modal">
+                <div class="modal-content">
+                  <span class="icon icon-trophy"></span>
+                  <h5 class="h-style">PROMOTION MATERIAL</h5>
+                   <p class="p-style">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                </div>
+                
+           </div>
+           <!--===== *   end modal content *   ====== -->
+         </div>
+       </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ========== * [Section (6)] portfolio * ========== -->
+<section class="portfolio center-align" id="portfolio">
+           
+  <h5 class="h-style">FEATURED WORKS</h5>
+  <p class="p-style">Interactive seize corporate manufactured products vis-a-vis customer directed</p>
+    <p class="p-style p-2">Quickly syndicate focused leadership and cutting-edge</p>
+    <div class="container">
+    <div class="row">
+      <!-- start work [1] -->
+      <div class="col s12 m6 l3">
+         <div class="info">
+           <img src="http://via.placeholder.com/350x350/222">
+           <div class="caption">
+             <a href="http://via.placeholder.com/350x350/222" data-lightbox="image-1" data-title="My caption">
+              <span class="icon icon-magnifying-glass"></span>
+            </a>
+           </div>
+         </div>  
+      </div>
+
+      <!-- start work [2] -->
+      <div class="col s12 m6 l3">
+         <div class="info">
+           <img src="http://via.placeholder.com/350x350/222">
+           <div class="caption">
+             <a href="http://via.placeholder.com/350x350/222" data-lightbox="image-1" data-title="My caption">
+              <span class="icon icon-magnifying-glass"></span>
+            </a>
+           </div>
+         </div>  
+      </div>
+
+      <!-- start work [3] -->
+      <div class="col s12 m6 l3">
+         <div class="info">
+           <img src="http://via.placeholder.com/350x350/222">
+           <div class="caption">
+             <a href="http://via.placeholder.com/350x350/222" data-lightbox="image-1" data-title="My caption">
+              <span class="icon icon-magnifying-glass"></span>
+            </a>
+           </div>
+         </div>  
+      </div>
+
+      <!-- start work [4] -->
+      <div class="col s12 m6 l3">
+         <div class="info">
+           <img src="http://via.placeholder.com/350x350/222">
+           <div class="caption">
+             <a href="http://via.placeholder.com/350x350/222" data-lightbox="image-1" data-title="My caption">
+              <span class="icon icon-magnifying-glass"></span>
+            </a>
+           </div>
+         </div>  
+      </div>
+
+      <!-- start work [5] -->
+      <div class="col s12 m6 l3">
+         <div class="info">
+           <img src="http://via.placeholder.com/350x350/222">
+           <div class="caption">
+             <a href="http://via.placeholder.com/350x350/222" data-lightbox="image-1" data-title="My caption">
+              <span class="icon icon-magnifying-glass"></span>
+            </a>
+           </div>
+         </div>  
+      </div>
+
+      <!-- start work [6] -->
+      <div class="col s12 m6 l3">
+         <div class="info">
+           <img src="http://via.placeholder.com/350x350/222">
+           <div class="caption">
+             <a href="http://via.placeholder.com/350x350/222" data-lightbox="image-1" data-title="My caption">
+              <span class="icon icon-magnifying-glass"></span>
+            </a>
+           </div>
+         </div>  
+      </div>
+
+      <!-- start work [7] -->
+      <div class="col s12 m6 l3">
+         <div class="info">
+           <img src="http://via.placeholder.com/350x350/222">
+           <div class="caption">
+             <a href="http://via.placeholder.com/350x350/222" data-lightbox="image-1" data-title="My caption">
+              <span class="icon icon-magnifying-glass"></span>
+            </a>
+           </div>
+         </div>  
+      </div>
+
+      <!-- start work [8] -->
+      <div class="col s12 m6 l3">
+         <div class="info">
+           <img src="http://via.placeholder.com/350x350/222">
+           <div class="caption">
+             <a href="http://via.placeholder.com/350x350/222" data-lightbox="image-1" data-title="My caption">
+              <span class="icon icon-magnifying-glass"></span>
+            </a>
+           </div>
+         </div>  
+      </div>
+
+      <!-- start work [9] -->
+      <div class="col s12 m6 l3">
+         <div class="info">
+           <img src="http://via.placeholder.com/350x350/222">
+           <div class="caption">
+             <a href="http://via.placeholder.com/350x350/222" data-lightbox="image-1" data-title="My caption">
+              <span class="icon icon-magnifying-glass"></span>
+            </a>
+           </div>
+         </div>  
+      </div>
+
+      <!-- start work [10] -->
+      <div class="col s12 m6 l3">
+         <div class="info">
+           <img src="http://via.placeholder.com/350x350/222">
+           <div class="caption">
+             <a href="http://via.placeholder.com/350x350/222" data-lightbox="image-1" data-title="My caption">
+              <span class="icon icon-magnifying-glass"></span>
+            </a>
+           </div>
+         </div>  
+      </div>
+
+      <!-- start work [11] -->
+      <div class="col s12 m6 l3">
+         <div class="info">
+           <img src="http://via.placeholder.com/350x350/222">
+           <div class="caption">
+             <a href="http://via.placeholder.com/350x350/222" data-lightbox="image-1" data-title="My caption">
+              <span class="icon icon-magnifying-glass"></span>
+            </a>
+           </div>
+         </div>  
+      </div>
+
+      <!-- start work [12] -->
+      <div class="col s12 m6 l3">
+         <div class="info">
+           <img src="http://via.placeholder.com/350x350/222">
+           <div class="caption">
+             <a href="http://via.placeholder.com/350x350/222" data-lightbox="image-1" data-title="My caption">
+              <span class="icon icon-magnifying-glass"></span>
+            </a>
+           </div>
+         </div>  
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ========== * [Section (7)] testimonials * ========== -->
+<section class="testimonials center-align" id="testimonials">
+ 
+  <div class="container">
+    <div class="row">
+      <div class="col s12">
+        <!-- start  client slider -->
+        <div class="carousel">
+           <!-- start item #1 -->
+           <a class="carousel-item" href="#one!">
+             <div class="info">
+               <img src="http://via.placeholder.com/100x100/222">
+               <div class="caption">
+                 <h5 class="h-style">Lisa Brown</h5>
+                 <p class="p-style">THE MASTERMIND</p>
+                 <p class="p-style word"><i class="fa fa-quote-left"></i>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. <i class="fa fa-quote-right"></i></p>
+                 <ul>
+                   <li><i class="fa fa-star"></i></li>
+                   <li><i class="fa fa-star"></i></li>
+                   <li><i class="fa fa-star"></i></li>
+                   <li><i class="fa fa-star"></i></li>
+                   <li><i class="fa fa-star-o"></i></li>
+                 </ul>
+               </div>
+             </div>
+           </a>
+
+           <!-- start item #2 -->
+           <a class="carousel-item" href="#two!">
+             <div class="info">
+               <img src="http://via.placeholder.com/100x100/222">
+               <div class="caption">
+                 <h5 class="h-style">ANDI SIMOND</h5>
+                 <p class="p-style">THE MASTERMIND</p>
+                 <p class="p-style word"><i class="fa fa-quote-left"></i>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. <i class="fa fa-quote-right"></i></p>
+                 <ul>
+                   <li><i class="fa fa-star"></i></li>
+                   <li><i class="fa fa-star"></i></li>
+                   <li><i class="fa fa-star"></i></li>
+                   <li><i class="fa fa-star-o"></i></li>
+                   <li><i class="fa fa-star-o"></i></li>
+                 </ul>
+               </div>
+             </div>
+           </a>
+
+           <!-- start item #3 -->
+           <a class="carousel-item" href="#three!">
+             <div class="info">
+               <img src="http://via.placeholder.com/100x100/222">
+               <div class="caption">
+                 <h5 class="h-style">RENE BROWN</h5>
+                 <p class="p-style">THE MASTERMIND</p>
+                 <p class="p-style word"><i class="fa fa-quote-left"></i>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. <i class="fa fa-quote-right"></i></p>
+                 <ul>
+                   <li><i class="fa fa-star"></i></li>
+                   <li><i class="fa fa-star"></i></li>
+                   <li><i class="fa fa-star"></i></li>
+                   <li><i class="fa fa-star"></i></li>
+                   <li><i class="fa fa-star"></i></li>
+                 </ul>
+               </div>
+             </div>
+           </a>
+
+           <!-- start item #4 -->
+           <a class="carousel-item" href="#four!">
+             <div class="info">
+               <img src="http://via.placeholder.com/100x100/222">
+               <div class="caption">
+                 <h5 class="h-style">KRISTY GABBOR</h5>
+                 <p class="p-style">THE MASTERMIND</p>
+                 <p class="p-style word"><i class="fa fa-quote-left"></i>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. <i class="fa fa-quote-right"></i></p>
+                 <ul>
+                   <li><i class="fa fa-star"></i></li>
+                   <li><i class="fa fa-star"></i></li>
+                   <li><i class="fa fa-star-o"></i></li>
+                   <li><i class="fa fa-star-o"></i></li>
+                   <li><i class="fa fa-star-o"></i></li>
+                 </ul>
+               </div>
+             </div>
+           </a>
+
+           <!-- start item #5 -->
+           <a class="carousel-item" href="#five!">
+             <div class="info">
+               <img src="http://via.placeholder.com/100x100/222">
+               <div class="caption">
+                 <h5 class="h-style">BRAIN RICE</h5>
+                 <p class="p-style">THE MASTERMIND</p>
+                 <p class="p-style word"><i class="fa fa-quote-left"></i>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. <i class="fa fa-quote-right"></i></p>
+                 <ul>
+                   <li><i class="fa fa-star"></i></li>
+                   <li><i class="fa fa-star"></i></li>
+                   <li><i class="fa fa-star"></i></li>
+                   <li><i class="fa fa-star"></i></li>
+                   <li><i class="fa fa-star-o"></i></li>
+                 </ul>
+               </div>
+             </div>
+           </a>
+
+         </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<!-- ========== * [Section (8)] Blog * ========== -->
+<section class="blog" id="blog">
+  <div class="container">
+    <h5  class="h-style center-align">LATEST POSTS</h5>
+    <p class="p-style center-align">Interactive seize corporate manufactured products vis-a-vis customer directed</p>
+    <p class="p-style p-2">Quickly syndicate focused leadership and cutting-edge</p>
+    <!-- start [slider] -->
+    <div class="owl-carousel owl-theme">
+      <!-- start [post (1)] -->
+      <div class="items">
+        <div class="info">
+           <a href="http://via.placeholder.com/300x350/222" data-lightbox="blo img #1" data-title="Elizabeth Du"><img src="http://via.placeholder.com/350x300/222"></a>
+          <!-- start title -->
+          <div class="header">
+            <span class="time"><a href="#">30 Nov</a></span>
+            <h5 class="h-style">Give us that</h5>
+            <p>
+            <a href="#"><span class="icon icon-profile-male"></span> Jhone doe</a>
+            <a href="#"><span class="icon icon-chat"></span> No comments</a>
+            </p>
+          </div>
+          <!-- end title -->
+          <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamcolaborum.</p>
+          <a href="#!" class="h-style blog-btn">More blog...</a>
+        </div>
+      </div>
+      <!-- end [post (1)] -->
+
+      <!-- start [post (2)] -->
+      <div class="items">
+        <div class="info">
+           <a href="http://via.placeholder.com/300x350/222" data-lightbox="blo img #1" data-title="Elizabeth Du"><img src="http://via.placeholder.com/300x350/222"></a>
+          <!-- start title -->
+          <div class="header">
+            <span class="time"><a href="#">30 Nov</a></span>
+            <h5 class="h-style">Consisting with technology</h5>
+            <p>
+            <a href="#"><span class="icon icon-profile-male"></span> Jhone doe</a>
+            <a href="#"><span class="icon icon-chat"></span> No comments</a>
+            </p>
+          </div>
+          <!-- end title -->
+          <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamcolaborum.</p>
+          <a href="#!" class="h-style blog-btn">More blog...</a>
+        </div>
+      </div>
+      <!-- end [post (2)] -->
+
+      <!-- start [post (3)] -->
+      <div class="items">
+        <div class="info">
+           <a href="http://via.placeholder.com/300x350/222" data-lightbox="blo img #1" data-title="Elizabeth Du"><img src="http://via.placeholder.com/300x350/222"></a>
+          <!-- start title -->
+          <div class="header">
+            <span class="time"><a href="#">30 Nov</a></span>
+            <h5 class="h-style">The inline product</h5>
+            <p>
+            <a href="#"><span class="icon icon-profile-male"></span> Jhone doe</a>
+            <a href="#"><span class="icon icon-chat"></span> No comments</a>
+            </p>
+          </div>
+          <!-- end title -->
+          <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamcolaborum.</p>
+          <a href="#!" class="h-style blog-btn">More blog...</a>
+        </div>
+      </div>
+      <!-- end [post (3)] -->
+
+      <!-- start [post (4)] -->
+      <div class="items">
+        <div class="info">
+           <a href="http://via.placeholder.com/300x350/222" data-lightbox="blo img #1" data-title="Elizabeth Du"><img src="http://via.placeholder.com/300x350/222"></a>
+          <!-- start title -->
+          <div class="header">
+            <span class="time"><a href="#">30 Nov</a></span>
+            <h5 class="h-style">Give us that</h5>
+            <p>
+            <a href="#"><span class="icon icon-profile-male"></span> Jhone doe</a>
+            <a href="#"><span class="icon icon-chat"></span> No comments</a>
+            </p>
+          </div>
+          <!-- end title -->
+          <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamcolaborum.</p>
+          <a href="#!" class="h-style blog-btn">More blog...</a>
+        </div>
+      </div>
+      <!-- end [post (4)] -->
+
+      <!-- start [post (5)] -->
+      <div class="items">
+        <div class="info">
+           <a href="http://via.placeholder.com/300x350/222" data-lightbox="blo img #1" data-title="Elizabeth Du"><img src="http://via.placeholder.com/300x350/222"></a>
+          <!-- start title -->
+          <div class="header">
+            <span class="time"><a href="#">30 Nov</a></span>
+            <h5 class="h-style">Consisting with technology</h5>
+            <p>
+            <a href="#"><span class="icon icon-profile-male"></span> Jhone doe</a>
+            <a href="#"><span class="icon icon-chat"></span> No comments</a>
+            </p>
+          </div>
+          <!-- end title -->
+          <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamcolaborum.</p>
+          <a href="#!" class="h-style blog-btn">More blog...</a>
+        </div>
+      </div>
+      <!-- end [post (5)] -->
+    </div>
+    <!-- end [slider] -->
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+<!-- ========== * [Section (9)] hire * ========== -->
+<section class="hire center-align">
+ <div class="content">
+   <div class="container">
+     <div class="row">
+       <!-- start col #1 -->
+       <div class="col s12 m6 push-m3">
+        <div class="info">
+          <p class="p-style">Do you like My Works?</p>
+          <h5 class="h-style">I’m Available For Freelancing Works. You Can Hire Me NOW.</h5>
+           <i class="fa fa-long-arrow-right"></i>
+           <a href="#contact" class="btn h-style">Hire Me</a>
+           <i class="fa fa-long-arrow-left"></i>
+           <br>
+           <ul>
+             <li><a href="#"><span class="icon icon-facebook"></span></a></li>
+             <li><a href="#"><span class="icon icon-twitter"></span></a></li>
+             <li><a href="#"><span class="icon icon-linkedin"></span></a></li>
+             <li><a href="#"><span class="icon icon-googleplus"></span></a></li>
+             <li><a href="#"><span class="icon icon-dribbble"></span></a></li>
+           </ul>
+         </div>
+       </div>
+
+     </div>
+   </div>
+ </div>  
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ========== * [Section (10)] Contact * ========== -->
+<section class="contact center-align" id="contact">
+ <h5 class="h-style">Get In Touch</h5>
+ <p class="p-style">Interactive seize corporate manufactured products vis-a-vis customer directed</p>
+ <p class="p-style">Quickly syndicate focused leadership and cutting-edge</p>
+  <div class="container">
+    <div class="row">
+       <!-- start info [1] -->
+       <div class="col s12 m8 push-m2 l3">
+         <div class="row">
+           <!-- start [email] -->
+           <div class="col s12">
+             <div class="info">
+               <span class="icon icon-envelope"></span>
+               <h6 class="h-style">Email Address</h6>
+               <p class="p-style">jhondo@hotmail.com</p>
+             </div>  
+           </div>
+
+           <!-- start [email] -->
+           <div class="col s12">
+             <div class="info">
+               <span class="icon icon-ribbon"></span>
+               <h6 class="h-style">Office Address</h6>
+               <p class="p-style">Mansoura / Egypt</p>
+             </div>  
+           </div>
+
+           <!-- start [email] -->
+           <div class="col s12">
+             <div class="info">
+               <span class="icon icon-mic"></span>
+               <h6 class="h-style">Phone Number</h6>
+               <p class="p-style">+1-202-555-0163</p>
+             </div>  
+           </div>
+
+         </div>  
+       </div>
+       <!-- end info [1] -->
+
+
+       <!-- start form -->
+       <div class="col s12 m12 l6">
+         <div class="info">
+           <form>
+             <!-- start input [1] -->
+             <div class="input">
+               <input type="text" placeholder="User-Name" name="">
+               <span class="icon icon-profile-male"></span>
+             </div>
+
+             <!-- start input [1] -->
+             <div class="input">
+               <input type="email" placeholder="E-mail" name="">
+               <span class="icon icon-envelope"></span>
+             </div>
+             
+             <!-- start textarea -->
+             <div class="subject">
+               <textarea placeholder="Subject"></textarea>
+               <span class="icon icon-pencil"></span>
+             </div>
+
+             <!-- start button send -->
+             <button class="submit h-style"><span class="icon icon-pricetags"></span> Submit Now</button>
+           </form>
+         </div>
+       </div>
+
+
+        <!-- start info [2] -->
+       <div class="col s12 m8 push-m2 l3">
+         <div class="row">
+           <!-- start [email] -->
+           <div class="col s12">
+             <div class="info">
+               <span class="icon icon-happy"></span>
+               <h6 class="h-style">Happy Clients</h6>
+               <p class="p-style">345</p>
+             </div>  
+           </div>
+
+           <!-- start [email] -->
+           <div class="col s12">
+             <div class="info">
+               <span class="icon icon-layers"></span>
+               <h6 class="h-style">Projects</h6>
+               <p class="p-style">173</p>
+             </div>  
+           </div>
+
+           <!-- start [email] -->
+           <div class="col s12">
+             <div class="info">
+               <span class="icon icon-gears"></span>
+               <h6 class="h-style">Support</h6>
+               <p class="p-style">1250</p>
+             </div>  
+           </div>
+
+         </div>  
+       </div>
+       <!-- end info [2] -->
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+            
+
+
+
+
+
+<!-- ========== * [Section (11) footer ]  * ========== -->
+<section class="footer center-align" id="footer">
+
+  <div class="container">
+    <div class="row">
+      <!-- start col #1 -->
+      <div class="col s12">
+        <ul>
+             <li><a href="#"><span class="icon icon-facebook"></span></a></li>
+             <li><a href="#"><span class="icon icon-twitter"></span></a></li>
+             <li><a href="#"><span class="icon icon-linkedin"></span></a></li>
+             <li><a href="#"><span class="icon icon-googleplus"></span></a></li>
+             <li><a href="#"><span class="icon icon-dribbble"></span></a></li>
+        </ul>
+        <h6 class="h-style">©Copyright 2017 Foxira | All RightReserved. </h6>
+        <h6 class="h-style">developed by <a href="#">Muhammad Hany</a></h6>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/materialize.min.js"></script>
+  <script src="js/lightbox.js"></script>
+  <script src="js/jquery.smooth-scroll.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/particles.js"></script>
+  <script src="js/app.js"></script>
+  <script type="text/javascript" src="https://cdn.bootcss.com/typed.js/1.1.4/typed.min.js"></script>
+  <script src="js/custom.js"></script>
+</body>
+
 </html>
