@@ -469,7 +469,8 @@ var parameters =
 
 function newSong(){
     var song = parameters.S;
-    context.close();
+    sound.pause();
+    sound.currentTime = 0;
     context.start();
     if (song == "Mitis") {
         loadSound("media/Mitis.mp3");
