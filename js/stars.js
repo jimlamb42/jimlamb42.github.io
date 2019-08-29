@@ -469,6 +469,7 @@ var parameters =
 
 function newSong(){
     var song = parameters.S;
+    context.close();
     context.start();
     if (song == "Mitis") {
         loadSound("media/Mitis.mp3");
@@ -478,11 +479,6 @@ function newSong(){
     else if (song == "Bangarang") {
         loadSound("media/Bangarang.mp3");
       
-        load = true;
-    }
-    else if (song == "Seven") {
-        loadSound("media/Seven.mp3");
-        
         load = true;
     }
     else if (song == "Time") {
@@ -500,7 +496,7 @@ function newSong(){
 //gui.add( parameters, 'F' ).name('Full Screen');
 gui.add(parameters, 'f').name("F for FullScreen");
 var songList = gui.add(parameters,'S',
-    ["Mitis", "Bangarang", "Seven", "Time", "Unison"]).name("Songs").listen();
+    ["Mitis", "Bangarang", "Time", "Unison"]).name("Songs").listen();
     songList.onChange(function(value){
         newSong();
 });
