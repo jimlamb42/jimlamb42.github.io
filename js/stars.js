@@ -117,6 +117,7 @@ function playSound(buffer) {
     sourceNode.buffer = buffer;
     sourceNode.loop = true;
     context.loop = true;
+    context.start();
     sourceNode.start(0);
 }
 
@@ -469,9 +470,7 @@ var parameters =
 
 function newSong(){
     var song = parameters.S;
-    sound.pause();
-    sound.currentTime = 0;
-    context.start();
+    
     if (song == "Mitis") {
         loadSound("media/Mitis.mp3");
         
