@@ -117,7 +117,6 @@ function playSound(buffer) {
     sourceNode.buffer = buffer;
     sourceNode.loop = true;
     context.loop = true;
-    context.start();
     sourceNode.start(0);
 }
 
@@ -470,25 +469,25 @@ var parameters =
 
 function newSong(){
     var song = parameters.S;
-    
+    context.close();
     if (song == "Mitis") {
         loadSound("media/Mitis.mp3");
-        
+        context.start();
         load = true;
     }
     else if (song == "Bangarang") {
         loadSound("media/Bangarang.mp3");
-      
+        context.start();
         load = true;
     }
     else if (song == "Time") {
         loadSound("media/Time.mp3");
-        
+        context.start();
         load = true;
     }
     else if (song == "Unison") {
         loadSound("media/Unison.mp3");
-        
+        context.start();
         load = true;
     }
 }
