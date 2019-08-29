@@ -85,7 +85,7 @@ var sourceNode;
 
 // load the sound
 setupAudioNodes();
-loadSound("media/Seven.mp3");
+
 
 function setupAudioNodes() {
     // create a buffer source node
@@ -512,7 +512,7 @@ var songList = gui.add(parameters,'S',
 var right = true;
     //moves the camera up and down
 var upper = true;
-loadSound("media/Mitis.mp3")
+
 camera.position.x = - 3;
 
 // loading variables
