@@ -472,7 +472,7 @@ var parameters =
 
 function newSong(){
     var song = parameters.S;
-    context.start();
+    context.resume();
     if (song == "Mitis") {
         loadSound("media/Mitis.mp3");
        
