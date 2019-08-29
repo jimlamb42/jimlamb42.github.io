@@ -459,7 +459,7 @@ if( THREEx.FullScreen.available() ){
 
 
 var gui = new dat.GUI();
-gui.close();
+
 var parameters =
 {
     S : '...',    // dummy value, only type is important
