@@ -71,6 +71,8 @@ function map_range(value, low1, high1, low2, high2) {
 ////////////////////////////////////////            AUDIO            ////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 
+var songBuffer = null; 
+
 // check if the default naming is enabled, if not use the chrome one.
 if (! window.AudioContext) {
     if (! window.webkitAudioContext) {
@@ -106,15 +108,16 @@ function loadSound(url) {
         // decode the data
         context.decodeAudioData(request.response, function(buffer) {
             // when the audio is decoded play the sound
-            playSound(buffer);
+            playSound(songBuffer);
         }, onError);
     };
     request.send();
 }
 
 
-function playSound(buffer) {
-    sourceNode.buffer = buffer;
+
+function playSound() {
+    sourceNode.buffer = songBuffer;
     sourceNode.loop = true;
     context.loop = true;
     sourceNode.start(0);
